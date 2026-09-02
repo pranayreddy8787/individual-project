@@ -1,0 +1,23 @@
+{
+  "name": "hyperlocal-delivery",
+  "version": "1.0.0",
+  "description": "Hyper-Local Delivery Dispatcher - QuickDrop",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "seed": "cd server && npm run seed",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "delivery",
+    "food-delivery",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
